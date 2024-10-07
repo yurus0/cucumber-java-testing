@@ -3,6 +3,10 @@ package com.bank;
 public class Account {
     private int balance;
 
+    public Account(){
+        balance = 0;
+    }
+
     public void deposit(int amount){
         balance += amount;
     }
