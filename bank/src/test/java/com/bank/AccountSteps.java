@@ -12,6 +12,9 @@ public class AccountSteps {
     @Given("a new account with balance {int}")
     public void createAccount(int initBalance){
         account = new Account();
+        if(initBalance < 100){
+            throw new IllegalArgumentException("Minimum balance should be 100");
+        }
         account.deposit(initBalance);
     }
 
