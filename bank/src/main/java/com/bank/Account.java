@@ -4,7 +4,7 @@ public class Account {
     private int balance;
 
     public Account(){
-        balance = 100;
+        balance = 0;
     }
 
     public void deposit(int amount){
